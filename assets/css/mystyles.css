@@ -1,0 +1,239 @@
+ /*importar fuente medieval*/
+ @import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
+ /*Generales*/
+*{
+  margin:0;
+  padding:0;
+  font-family: 'MedievalSharp', cursive;
+  text-decoration:none;
+}
+ body{
+  background-image:url("../img/animate.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: 'MedievalSharp', cursive;
+  
+} 
+.clearfix{
+  clear:both;
+  float:none;
+}
+/*Cabecera*/
+#header{
+  width: 80%;
+  height:auto;
+  background:transparent;
+  margin:0 auto;
+
+}
+/*logotipo*/
+#logo{
+  float:left;
+  width:540px;
+  height:100px;
+}
+#logo a{
+  
+  font-size:40px;
+  letter-spacing:2px;
+  color:#cebc90;
+  text-shadow:0px 0px 0px black,4px 4px 0px black,6px 6xp 0px black;
+  transition:all 500ms;
+  -webkit-transition:all 500ms;
+  -moz-transition:all 500ms;
+  -ms-transition:all 500ms;
+  -o-transition:all 500ms;
+}
+
+#logo a:hover{
+  cursor:pointer;
+  text-shadow:0px 0px 0px black,-1px -1px 0px black,-2px -2xp 0px black;
+}
+/*menu*/
+#nav{
+ clear:both;
+ width:100%;
+ background-image: url("../img/border.png") ;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ height:30px;
+ border-radius:30px;
+ -webkit-border-radius:8px;
+ -moz-border-radius:8px;
+ -ms-border-radius:8px;
+ -o-border-radius:8px;
+ -webkit-border-radius:8px;
+ box-shadow:0px 1px 1px black ; 
+ overflow:hidden;
+}
+nav ul{
+  list-style:none;
+}
+nav ul li{
+  float:left;
+  line-height:30px;
+  border-right:1px solid #d6d6d6;
+}
+nav ul li:hover{
+  background:linear-gradient(to bottom,#efc76c 0px,#73602a 100%);
+}
+nav ul li a{
+  display:block;
+  padding-left:10px;
+  padding-right:10px;
+  font-size:14px;
+  font-weight:bold; 
+  color:black;
+}
+/*contenido*/
+#container{
+  width:85%;
+  height:auto;
+  min-height:auto;
+  margin:0 auto;
+  margin-top:30px;
+  margin-bottom:0px;
+}
+
+/*barra lateral*/
+#sidebar{
+  float:right;
+  width:31%;
+  min-height: auto;
+  height:auto;
+}
+.block-aside{
+  display:block;
+  width:90%;
+  margin:0px auto;
+  margin-bottom:35px;
+  padding:15px;
+  background-image: url("../img/border.png") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow:0px 0px 1px rgba(0,0,0,0.3),0px 3px 7px rgba(0,0,0,0.3),0px 0px 1px #ffffff inset,0px -3px 2px rgba(0,0,0,0.25) inset; 
+}
+.block-aside h4{
+margin-bottom :15px;
+}
+label,input[type="text"],
+input[type="email"],
+input[type="password"]{
+  display:block;
+  width:95%;
+  margin-top:2px;
+  margin-bottom:2px;
+
+}
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+  padding:3px;
+  margin-bottom:10px;
+}
+input[type="button"],
+input[type="submit"]{
+ 
+  margin-top:5px;
+  margin-bottom:5px;
+  border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; -ms-border-radius:2px; -o-border-radius:2px;
+  color:white;
+  background:#007ee5;
+  border:1px solid #157685;
+  cursor: pointer;
+  padding:5px;
+}
+/*main*/
+#main{
+  float:left;
+  width:65%;
+  min-height: 572px;
+  color:white;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -o-border-radius:5px;
+  box-shadow:0px 0px 8px black;
+  margin-left:20px;
+  overflow:hidden;
+}
+#main h3{
+  text-shadow: 3px 3px 4px grey;
+  }
+  #main h3:hover{
+   color:#2c1fefba;
+   cursor: pointer;	
+    }
+  #main a{
+    color:white;
+  }
+#main p{
+margin-top:8px;
+}
+#all a{ display:block; 
+  border-radius:2px; -webkit-border-radius:2px; -moz-border-radius:2px; -ms-border-radius:2px; -o-border-radius:2px;
+  padding:9px;
+  color:white;
+  background:#007ee5;
+  border:1px solid #157685;
+  cursor: pointer;
+  width:25%;
+  margin:0 auto;
+  margin-top:50px;
+  
+}
+/*footer*/
+footer{
+  clear:both;
+  width:85%;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom:none;
+  border-radius:8px 8px 0px 0px;
+  -webkit-border-radius:8px 8px 0px 0px;
+  -moz-border-radius:8px 8px 0px 0px;
+  -ms-border-radius:8px 8px 0px 0px;
+  -o-border-radius:8px 8px 0px 0px;
+  color: black;
+
+  padding:10px;
+  height:auto;
+  text-align:center;
+}
+#blason img{ 
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin: 0 auto;
+  margin-right: 1vw;
+
+}
+#flag{
+  background-image: url("../img/War_flag.svg") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#flag h4{
+  text-align: -webkit-auto;
+
+}
+.alerta{
+  padding:5px;
+  font-size:14px;
+  color:white;
+  background:green;
+  box-shadow:0px 1px 3px  #ccc;
+  margin-bottom:15px;
+  border-radius:4px;
+
+}
+.alerta-error{
+  background:red;
+}
