@@ -10,7 +10,7 @@
  body{
   background-image:url("../img/animate.gif");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: unset;
   background-size: cover;
   font-family: 'MedievalSharp', cursive;
   
@@ -135,7 +135,7 @@ input[type="password"]{
   margin-bottom:10px;
 }
 input[type="button"],
-input[type="submit"]{
+input[type="submit"],.boton{
  
   margin-top:5px;
   margin-bottom:5px;
@@ -145,6 +145,29 @@ input[type="submit"]{
   border:1px solid #157685;
   cursor: pointer;
   padding:5px;
+}
+/*usuario login*/
+.boton{
+  background-color:#5e0102;
+  border-color: #1d0605;
+}
+#usuario-login{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-row-gap: 15px;
+}
+#usuario-login h4{
+  margin-bottom:0 ;
+}
+.azul{
+  background-color:#157685;
+}
+.amarillo{
+  background-color:#fda700;
+}
+.naranja{
+background-color:#fad433;
 }
 /*main*/
 #main{
@@ -164,10 +187,7 @@ input[type="submit"]{
 #main h3{
   text-shadow: 3px 3px 4px grey;
   }
-  #main h3:hover{
-   color:#2c1fefba;
-   cursor: pointer;	
-    }
+  
   #main a{
     color:white;
   }
@@ -186,6 +206,26 @@ margin-top:8px;
   margin-top:50px;
   
 }
+
+article.entrada {
+
+  margin-bottom: 2vw;
+  margin-top:0.4vw;
+}
+article p{
+  color:#157685;
+}
+article h3{
+ color: #fda700;
+}
+article:hover h3{
+  color:#fad433;
+  cursor: pointer;	
+} 
+article:hover p{
+  color:#fad433;
+  cursor: pointer;	
+} 
 /*footer*/
 footer{
   clear:both;
@@ -205,6 +245,10 @@ footer{
   padding:10px;
   height:auto;
   text-align:center;
+}
+footer h4{
+  color: #5e0102;
+    background-color: #ffffff17;
 }
 #blason img{ 
   width: 100px;

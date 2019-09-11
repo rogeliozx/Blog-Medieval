@@ -20,12 +20,12 @@ if($_POST){
                 unset($_SESSION['Error_login']);
             }
         }else{
-            $_SESSION['Error_login']='login incorrecto';
+            $_SESSION['Error_login']='Caballero no registrado';
         }
        
        
     }else{
-        $_SESSION['Error_login']='login incorrecto';
+        $_SESSION['Error_login']='Caballero no registrado';
     }
    
 }

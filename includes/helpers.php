@@ -20,10 +20,6 @@ function borrarErrores(){
         $_SESSION['errores']=null;
         $delete=session_unset();
     }
-    
-    
-
-   
    if ($_SESSION['completado']) {
     $_SESSION['completado']=null;
     session_unset( );
@@ -33,6 +29,32 @@ function borrarErrores(){
    }
   
    return  $delete; 
+}
+function conseguirCategorias($conexion){
+    $sql="SELECT * FROM categorias ORDER BY id ASC";
+   $categorias= mysqli_query($conexion,$sql);
+   $result=false;
+   if ($categorias && mysqli_num_rows($categorias)>=1) {
+    $result=$categorias;
+   }
+   return $result;
+}
+function conseguirEntradas($conexion){
+    
+   
+    $sql='SELECT e.*,c.nombre AS "categoria" FROM entradas AS e
+    INNER JOIN categorias AS c ON e.categoria_id=c.id 
+    ORDER BY e.id DESC LIMIT 4';
+    $entradas=mysqli_query($conexion,$sql);
+    
+    $result=false;
+    
+    if ($entradas && mysqli_num_rows($entradas)>=1) {
+     $result=$entradas;
+    }
+    
+    return $result;
+ 
 }
 
 ?>
