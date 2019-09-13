@@ -4,7 +4,7 @@
      <?php if(isset($_SESSION['usuario'])): ?>
      <section id='usuario-login' class="block-aside">
          <h4>Bienvenido Caballero <?=$_SESSION['usuario']['nombre'].' '.$_SESSION['usuario']['apellidos']; ?> ⚔️🛡️</h4>
-         <div> <a href="cerrar.php" class="boton amarillo">Postular misión 🔍❓</a></div>
+         <div> <a href="crearentradas.php" class="boton amarillo">Postular misión 🔍❓</a></div>
          <div> <a href="crearcategoria.php" class="boton azul">Crear Aventuras 🗡️❓</a></div>
          <div> <a href="cerrar.php" class="boton naranja">Como esta misión 🏰❓</a></div>
          <div> <a href="cerrar.php" class="boton">Viajara Caballero 🐎❓</a></div>

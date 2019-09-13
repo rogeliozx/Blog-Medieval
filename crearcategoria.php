@@ -7,9 +7,12 @@
 <?php require_once 'includes/aside.php' ?>
 <section id='main' class=''>
         <h2>Postule una aventura caballero 🗡️</h2>
-       
-        <form action="guardarCategoria.php">
-
+       <p>Cree una nueva aventura caballero para crear nuevas misiones!</p>
+       <br/>
+        <form action="./includes/guardarCategoria.php" method="POST">
+            <label for="name">Tipo aventura nueva!</label>
+                <input type="text" name="name" />
+                <input type="submit" value="Guarde la aventura"/>
 
         </form>
     </section>
